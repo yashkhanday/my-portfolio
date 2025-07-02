@@ -1,23 +1,69 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: auto;
+  padding: 40px 0;
 }
 
 header {
-  background-color: #0066cc;
-  color: white;
-  padding: 30px;
+  background: #0066cc;
+  color: #fff;
+  padding: 60px 0;
   text-align: center;
 }
 
-section {
-  padding: 30px;
-  border-bottom: 1px solid #ddd;
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
 
-h2 {
+header p {
+  font-size: 1.2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   color: #0066cc;
 }
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-top: 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+  margin-top: 40px;
+}
+    
