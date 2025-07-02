@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="container">
-    <img src="profile.jpg" class="profile-pic" alt="Yash Khanday" />
-    <h1>Yash Khanday</h1>
-    <p>Full Stack Developer | MERN | JavaScript | MongoDB</p>
-  </div>
-</header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yash Khanday | Portfolio</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
   <!-- Hero Section -->
   <header class="hero">
+    <div class="overlay"></div>
     <div class="container">
-      <img src="profile.jpg" class="profile-pic" alt="Yash Khanday" />
+      <!-- Profile Avatar (Unsplash) -->
+      <img src="https://images.unsplash.com/photo-1614284551153-0a5f6c8c8a3e?crop=faces&fit=crop&w=200&h=200" class="profile-pic" alt="Yash Khanday" />
       <h1>Yash Khanday</h1>
       <p>Full Stack Developer | MERN | JavaScript | MongoDB</p>
     </div>
@@ -24,7 +34,7 @@
   <section id="about" data-aos="fade-up">
     <div class="container">
       <h2>About Me</h2>
-      <p>Hello! I'm Yash, a self-taught developer focused on building creative and functional websites with the MERN stack and modern JavaScript.</p>
+      <p>Hello! I'm Yash, a self-taught developer focused on building creative and functional websites using the MERN stack and modern JavaScript. I love building smooth UIs and scalable backends.</p>
     </div>
   </section>
 
@@ -33,10 +43,11 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project-card">
-        <img src="project1.jpg" class="project-img" alt="Project Screenshot" />
+        <!-- Project placeholder image from Unsplash -->
+        <img src="https://images.unsplash.com/photo-1581093801077-8b1f0da7a17b?fit=crop&w=600&h=400" class="project-img" alt="Project Screenshot" />
         <h3>Lead Management System</h3>
         <p>Login, Dashboard, Leads, Express API, MongoDB</p>
-        <a href="#">🔗 View Project</a>
+        <a href="#" target="_blank">🔗 View Project</a>
       </div>
     </div>
   </section>
@@ -45,8 +56,8 @@
   <section id="contact" data-aos="fade-right">
     <div class="container">
       <h2>Contact Me</h2>
-      <p><i class="fa-solid fa-envelope"></i> yash@example.com</p>
-      <p><i class="fa-brands fa-github"></i> <a href="https://github.com/YashKhanday" target="_blank">@YashKhanday</a></p>
+      <p><i class="fas fa-envelope"></i> yash@example.com</p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/YashKhanday" target="_blank">@YashKhanday</a></p>
     </div>
   </section>
 
@@ -57,11 +68,10 @@
     </div>
   </footer>
 
-  <!-- AOS Script -->
+  <!-- AOS Animation Script -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ duration: 800 });
   </script>
-
 </body>
 </html>
